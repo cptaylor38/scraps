@@ -9,6 +9,8 @@
     background:transparent;
     padding: 20px !important;
     font-family: Japanese_3017;
+    display: flex;
+    text-align: center;
 }
 
 

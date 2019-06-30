@@ -13,10 +13,7 @@ body
     font-family: HACKED;
     src: url("../../fonts/HACKED.ttf")
 }
-@font-face {
-    font-family: Japanese_3017;
-    src: url("../../fonts/Japanese_3017.ttf")
-}
+
 
 .pageContainer
 {
@@ -30,7 +27,7 @@ nav
    display: flex;
     justify-content: space-around;
     flex-direction: row;
-    font-family: Japanese_3017;
+    
 }
 
 .searchCol
