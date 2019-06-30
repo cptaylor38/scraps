@@ -4,7 +4,7 @@ import './navbar.css';
 const Navbar = ({ user, onClick }) => {
 
     return (
-        <nav className="navbar">
+        <div className="navbar">
             <div className='logoHolder container'>
                 <h1>SCRAPS</h1>
             </div>
@@ -14,7 +14,7 @@ const Navbar = ({ user, onClick }) => {
             <div className='faceHolder container'>
                 <img src='https://slack-imgs.com/?c=1&url=https%3A%2F%2Fthumbs.gfycat.com%2FOrdinaryPartialAmericanredsquirrel-size_restricted.gif' alt='monkey gif' id='facePic'></img>
             </div>
-        </nav>
+        </div>
     );
 }
 

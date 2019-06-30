@@ -26,5 +26,22 @@
     margin: auto;
 }
 
+.faceHolder
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.messageHolder
+{
+    margin: auto;
+}
+
+.logoHolder
+{
+    margin: auto;
+}
 
 
