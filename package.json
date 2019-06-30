@@ -1,0 +1,44 @@
+{
+  "name": "finalProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cptaylor38/finalProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cptaylor38/finalProject/issues"
+  },
+  "homepage": "https://github.com/cptaylor38/finalProject#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "firebase": "^6.2.1",
+    "modali": "^1.1.1",
+    "mongoose": "^5.6.0",
+    "node-craigslist": "^2.0.0",
+    "node-spotify-api": "^1.1.1",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "react-iframe": "^1.8.0",
+    "wow.js": "^1.2.2",
+    "yarn": "^1.16.0"
+  }
+}

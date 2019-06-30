@@ -1,0 +1,27 @@
+.navbar
+{
+    color: tomato;
+    background:transparent;
+    padding: 20px !important;
+    justify-content: center;
+}
+
+.buttonHolder
+{
+    color: tomato;
+}
+
+.navbar-nav
+{
+    color: white;
+}
+
+#facePic
+{
+    max-height: 30%;
+    max-width: 30%;
+}
+
+
+
+
