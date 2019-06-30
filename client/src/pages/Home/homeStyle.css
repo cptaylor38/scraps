@@ -178,7 +178,6 @@ img {
 }
 
 .row {
-  display: table;
   justify-content: space-evenly;
   clear: both;
   box-sizing: border-box;
