@@ -4,7 +4,7 @@ import './navbar.css';
 const Navbar = ({ user, onClick }) => {
 
     return (
-        <div className="navbar">
+        <div className="mainNavbar">
             <div className='logoHolder container'>
                 <h1>SCRAPS</h1>
             </div>

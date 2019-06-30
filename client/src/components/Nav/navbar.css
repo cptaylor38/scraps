@@ -1,9 +1,16 @@
-.navbar
+@font-face {
+    font-family: Japanese_3017;
+    src: url("../../fonts/Japanese_3017.ttf")
+}
+
+.mainNavbar
 {
     color: tomato;
     background:transparent;
     padding: 20px !important;
+    font-family: Japanese_3017;
 }
+
 
 .buttonHolder
 {
