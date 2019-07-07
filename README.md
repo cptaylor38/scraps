@@ -20,7 +20,7 @@ A brief summary: Login with Firebase Authentication, then you are taken to the h
 **Disclaimer**
 
 
-Over the course of this project we went through several scrapped ideas leaving us with very little time to meet the deadline. With about a week and a half left, we decided to have fun with it and created this "ironic ugly" old Window's Franken-App using scraps of previous projects and homeworks. The application was not built with mobile responsiveness in mind and may have drastic differences on different screen sizes.
+Over the course of this project we went through several scrapped ideas leaving us with very little time to meet the deadline. With about a week and a half left, we decided to have fun with it and created this "ironic ugly" old Window's Franken-App using scraps of previous projects and homeworks. The application was not built with mobile responsiveness in mind and may have a drastically altered appearance on different screen sizes.
 
 This is a copy repo due to deployment issues but the original can be found [here](https://github.com/cptaylor38/finalProject).
 
