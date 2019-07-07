@@ -1,5 +1,7 @@
 # finalProject
 
+[Scraps](https://scrapsproject.herokuapp.com/)
+
 A 90's inspired journal application using the Spotify API, Mongo, Express, React/Hooks, and Firebase.
 
 A brief summary: Login with Firebase Authentication, then you are taken to the home screen. 
