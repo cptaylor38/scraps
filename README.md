@@ -24,8 +24,8 @@ This is a copy repo due to deployment issues but the original can be found [here
 
 Other collaborators were: 
   
-    1. [Paul Baron](https://github.com/pbaron90) - Css
-    2. [Manzell Hatten](https://github.com/manhatten331) - Firebase/Authentication
-    3. [Lauren Carroll](https://github.com/ashlaurencarroll) - Css/Theme
+[Paul Baron](https://github.com/pbaron90) - Css
+[Manzell Hatten](https://github.com/manhatten331) - Firebase/Authentication
+[Lauren Carroll](https://github.com/ashlaurencarroll) - Css/Theme
 
 
