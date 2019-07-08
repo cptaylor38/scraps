@@ -35,4 +35,9 @@ Other collaborators were:
 [Lauren Carroll](https://github.com/ashlaurencarroll) - Css/Theme
 
 
+Todos:
+Add responsiveness. 
+Add input validation to song search to prevent freezing.
+
+
 
