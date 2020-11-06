@@ -98,9 +98,7 @@ const Home = props => {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className='journalCol'>
+                <div className='journalCol'>
                 <div className="title">
                     <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' id='windowsImg' width="18px" height="18px" />
                     <h1 className="title">Windows 95</h1>
@@ -116,6 +114,7 @@ const Home = props => {
                         <button className='button-default' type='button' onClick={() => journalClick()}>Journal</button>
                     </div>
                 </div>
+            </div>
             </div>
             <div className="footer">
                 <button className="button-default"> <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' width="23" height="23" />Start</button>
