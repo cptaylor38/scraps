@@ -9,7 +9,7 @@ import Journal from '../../components/homeJournal/Journal';
 import Archives from '../../components/homeArchives/Archives';
 
 const Home = props => {
-const [userName, setUserData] = useState('')
+    const [userName, setUserData] = useState('')
     const [moodInput, setMoodInput] = useState('');
     const [tracks, setTracks] = useState([]);
     const { currentUser } = useContext(AuthContext);
@@ -74,58 +74,56 @@ const [userName, setUserData] = useState('')
     return (
 
 
-<>
+        <>
             <Navbar user={userName} />
             <div className='container-fluid pageContainer'>
-                <div className='row'>
-<div className='searchCol'>
-                        <div className="title">
-                            <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' width="18" height="18" />
-                            <h1 className="title">Windows 95</h1>
-                            <h1 className="title">CD Player</h1>
-                            <button>X</button>
-                            <button>?</button>
-                            <div className='searchFormContainer' style={searchFormStyle}>
-                                <form id='searchInputBox' onSubmit={handleSubmit} style={{ paddingTop: '20px' }}>
-                                    <input type='text' name='moodText' id='moodText' value={moodInput} placeholder='Mood' onChange={e => setMoodInput(e.target.value)}></input>
-                                    <button className='button-default'>Search</button>
-                                </form>
-                            </div>
-                            <div className='container searchCriteria'>
-                                <div className='resultsContainer' style={resultsStyle} >
-                                    {tracks && tracks.length !== 0 ? tracks.filter((item) => item != null).map(item => <TrackItems key={item.id} data={item} />) :
-                                        <img src="http://bestanimations.com/Computers/Discs/cd-animated-gif-11.gif" alt='cd gif' onClick={event => toggleSearch(event)} id='cdIcon' />}
-                                </div>
-                            </div>
+                <div className='searchCol'>
+                    <div className="title">
+                        <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' width="18" height="18" />
+                        <h1 className="title">Windows 95</h1>
+                        <h1 className="title">CD Player</h1>
+                        <button>X</button>
+                        <button>?</button>
+                    </div>
+                    <div className='searchFormContainer' style={searchFormStyle}>
+                        <form id='searchInputBox' onSubmit={handleSubmit} style={{ paddingTop: '20px' }}>
+                            <input type='text' name='moodText' id='moodText' value={moodInput} placeholder='Mood' onChange={e => setMoodInput(e.target.value)}></input>
+                            <button className='button-default'>Search</button>
+                        </form>
+                    </div>
+                    <div className='container searchCriteria'>
+                        <div className='resultsContainer' style={resultsStyle} >
+                            {tracks && tracks.length !== 0 ? tracks.filter((item) => item != null).map(item => <TrackItems key={item.id} data={item} />) :
+                                <img src="http://bestanimations.com/Computers/Discs/cd-animated-gif-11.gif" alt='cd gif' onClick={event => toggleSearch(event)} id='cdIcon' />}
                         </div>
                     </div>
-
-<div className='journalCol'>
-                        <div className="title">
-                            <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' id='windowsImg' width="18px" height="18px" />
-                            <h1 className="title">Windows 95</h1>
-                            <button>X</button>
-                            <button>?</button>
-                            <div className='container journalEntries'>
-                                <div className='archivesHolder'>
-                                    {journalState && !archivesState ? <Journal userId={userId} setNewEntry={setNewEntry} setJournalState={setJournalState} /> : <Archives userId={userId} entries={entries} retrieveProfile={retrieveProfile} />}
-                                </div>
-                                <div className='journalButtonHolder'>
-                                    <button className='button-default' type='button' onClick={() => archivesClick()}>Archives</button>
-                                    <button className='button-default' type='button' onClick={() => journalClick()}>Journal</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-</div>
-                <div className="footer">
-                    <button className="button-default"> <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' width="23" height="23" />Start</button>
-                    <button className="button-default2" onClick={event => signOut(event)}>Sign Out </button>
                 </div>
             </div>
 
+            <div className='journalCol'>
+                <div className="title">
+                    <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' id='windowsImg' width="18px" height="18px" />
+                    <h1 className="title">Windows 95</h1>
+                    <button>X</button>
+                    <button>?</button>
+                </div>
+                <div className='container journalEntries'>
+                    <div className='archivesHolder'>
+                        {journalState && !archivesState ? <Journal userId={userId} setNewEntry={setNewEntry} setJournalState={setJournalState} /> : <Archives userId={userId} entries={entries} retrieveProfile={retrieveProfile} />}
+                    </div>
+                    <div className='journalButtonHolder'>
+                        <button className='button-default' type='button' onClick={() => archivesClick()}>Archives</button>
+                        <button className='button-default' type='button' onClick={() => journalClick()}>Journal</button>
+                    </div>
+                </div>
+            </div>
+            <div className="footer">
+                <button className="button-default"> <img src="http://i63.tinypic.com/117hi0p.png" alt='windows 98 logo' width="23" height="23" />Start</button>
+                <button className="button-default2" onClick={event => signOut(event)}>Sign Out </button>
+            </div>
+
         </>
-)
+    )
 }
 
 export default Home;

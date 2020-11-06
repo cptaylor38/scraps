@@ -15,7 +15,7 @@ const Modal = ({ isShowing, hide, url }) => isShowing ? ReactDOM.createPortal(
             </div>
             <div className="modal-content" style={{ border: 'none', backgroundColor: 'transparent' }}>
                 <Iframe url={url}
-                    width="100px"
+                    width="6vw"
                     height="100px"
                     id="myId"
                     className="myClassname"

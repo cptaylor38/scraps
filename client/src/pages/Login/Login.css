@@ -5,3 +5,9 @@
     align-items: center;
     text-align: center;
 }
+
+.logContent
+{
+    display: flex;
+    flex-flow: column wrap;
+}

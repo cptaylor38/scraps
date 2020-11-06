@@ -6,6 +6,7 @@ body
     background: url("https://thumbs.gfycat.com/HarmoniousImpracticalBrant-size_restricted.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -18,8 +19,7 @@ body
 .pageContainer
 {
    display: flex;
-   flex-flow: column wrap;
-   margin-top: 20px;
+   flex-flow: row wrap;
 }
 
 nav
@@ -34,11 +34,8 @@ nav
 {
 font-family:"MS Sans Serif";
     background: #C0C0C0;
-    flex: 1;
     margin: 10px;
     height: 62vh;
-    float: left;
-    max-width: 40%;
     outline:1px solid #000000;
     background:#C0C0C0;
     border-width:7px;
@@ -267,10 +264,7 @@ a {
 {
     font-family:"MS Sans Serif";
     background: #C0C0C0;
-    flex: 1;
     margin: 10px;
-    float: left;
-    max-width: 40%;
     outline:1px solid #000000;
     background:#C0C0C0;
     border-width:7px;

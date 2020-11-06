@@ -58,9 +58,11 @@ const Login = ({ history }) => {
 
     return (
         <>
-            <Jumbotron />
-            <div className='container-fluid formContainer'>
-                {!newUser ? (<SignIn onSubmit={handleLogin} setNewUser={setNewUser} />) : (<Register onSubmit={handleSignUp} newUser={newUser} setNewUser={setNewUser} />)}
+            <div className='logContent'>
+                <Jumbotron />
+                <div className='formContainer'>
+                    {!newUser ? (<SignIn onSubmit={handleLogin} setNewUser={setNewUser} />) : (<Register onSubmit={handleSignUp} newUser={newUser} setNewUser={setNewUser} />)}
+                </div>
             </div>
         </>
     )
