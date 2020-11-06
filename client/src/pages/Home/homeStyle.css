@@ -172,6 +172,7 @@ img {
   padding: 3px 10px;
   position: absolute;
   bottom: 0;
+  left: 0;
   min-width: 100%;
 }
 
