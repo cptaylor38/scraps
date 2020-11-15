@@ -31,7 +31,6 @@ const Login = ({ history }) => {
             history.push("/");
         } catch (error) {
             setNewUser(true);
-            console.log(error);
         }
     }, [history]);
 
@@ -44,16 +43,26 @@ const Login = ({ history }) => {
                 .auth()
                 .createUserWithEmailAndPassword(email.value, password.value)
                 .then(res => {
-                    createMongoUser(res.user.uid, userName);
+                    try{
+                        createMongoUser(res.user.uid, userName);
+                    }
+                    catch(error){
+                        console.log(error);
+                    }
                 });
             history.push("/");
         } catch (error) {
-            alert(error);
+            console.log(error);
         }
     }, [history]);
 
     const createMongoUser = (userId, username) => {
-        API.createUser({ id: userId, username: username });
+        try{
+            API.createUser({ id: userId, username: username });
+        }
+        catch(error){
+            console.log(error);
+        }
     }
 
     return (

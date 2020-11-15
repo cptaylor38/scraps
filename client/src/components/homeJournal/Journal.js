@@ -3,8 +3,6 @@ import API from '../../utils/API';
 import './Journal.css';
 
 const Journal = ({ userId, setNewEntry, setJournalState }) => {
-    console.log(userId);
-
     const submitEntry = event => {
         event.preventDefault();
         const title = event.target.elements.title.value;

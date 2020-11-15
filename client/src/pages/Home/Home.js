@@ -25,6 +25,7 @@ const Home = props => {
         const user = currentUser.uid;
         API.getProfile(user)
             .then(res => {
+                console.log(res);
                 setUserData(res.data.username);
                 setUserId(res.data._id);
                 setNewEntry(false);
@@ -34,8 +35,22 @@ const Home = props => {
             .catch(err => console.log(err));
     }
 
-    useEffect(retrieveProfile, []);
-    useEffect(retrieveProfile, [newEntry]);
+    useEffect(()=> {
+        try{
+            retrieveProfile()
+        }
+        catch(err){
+            console.log(err);
+        }
+    }, []);
+    useEffect(()=>{
+        try{
+            retrieveProfile()
+        }
+        catch(error){
+            console.log(error);
+        }
+    }, [newEntry]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
