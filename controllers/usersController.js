@@ -11,6 +11,6 @@ module.exports = {
             });
     },
     create: function (req, res) {
-        db.User.create(req.body, (err, res) => { if (err) throw err; console.log(res) });
+        db.User.create(req.body, (err, response) => { if (err) throw err; res.send(response) });
     }
 };
